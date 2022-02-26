@@ -1,0 +1,15 @@
+<!-- templates/post_detail-->
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="post-entry">
+    <h2>
+        <!-- we get title from our context object which we get from DetailView-->
+        {{ post.title }}
+        <p>
+            {{ post.body }}
+        </p>
+    </h2>
+</div>
+{% endblock content %}
